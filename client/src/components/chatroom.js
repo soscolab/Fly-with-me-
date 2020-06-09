@@ -7,7 +7,7 @@ const userFullName = 'Joseph Strawberry'
 const test = window.my_special_setting;
 console.log(test)
 
-
+/*das ist me testing*/
 const Chat = () => {
        console.log(test)
        return (
