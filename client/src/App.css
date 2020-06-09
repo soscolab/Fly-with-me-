@@ -1,0 +1,173 @@
+    .grid {
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: 0.50fr 2fr 0.25fr;
+    min-height: 100vh;
+    grid-row-gap: 0; /*enlever l'espace entre les grides*/
+    row-gap : 0;   /* une deuxiéme methode pour enlever l'espace entre les grides*/
+    background-color:white;
+    }
+
+   .entete{
+    background-color:white;
+
+    }
+    
+
+   .entete-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    flex-wrap: nowrap;
+    grid-row: 1;
+     /* Start on the first column line and extend all the to the last column line */
+    }
+
+    .register-button{
+     position: absolute;
+     right: 20px; 
+     vertical-align: baseline;
+     border: none;
+     color: white;
+     text-align: center;
+     text-decoration: none;
+     font-size: 12px;
+    } 
+
+    .corps {
+    /* Start on Row 2 */
+    grid-row: 2;
+    /* Start on the second column line and stop at the third column line */
+    background:white;
+    color: white;
+    }
+
+   .rooms-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content:space-around;
+    align-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    }
+
+.room-information {
+display: flex;
+flex-direction: column;
+flex-direction: space-between;
+flex-direction: space-around;
+align-content: center;
+padding-right: 20px;
+padding-left: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+flex-wrap: wrap;
+background-color:skyblue;
+color: black;
+width: 300px;
+height: 200px;
+
+}
+
+.room-join-container{
+position: absolute;
+align-self: center;
+padding-top: 130px;
+width: 20px;
+height: 20px;
+}
+
+
+   
+   .rooms-section-title  {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    }
+   
+    .room-new-button {
+    vertical-align: baseline;
+    position: absolute;
+    right: 20px;
+    display: flex;
+    justify-content: right;   
+    Background-color:grey; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    }
+ 
+   
+   
+
+   .footer {
+    /* Start on Row 3, the last row */
+    grid-row: 3;
+justify-self: center;    /* Start on the first column line and extend all the to the last column line */
+   
+    }
+
+   .modal {
+   position: absolute;
+   width: 500px;
+   height: 300px;
+   right: 200px;  
+   top: 150px;
+   z-index: 1;
+   background-color:lightcyan;
+   }
+
+   .room-info {
+    background-color:lightcyan;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content : space-around;
+    justify-content: space-between;
+    align-content: center;
+   }
+
+
+   .container-room-description {
+    padding-top: 45px;
+    margin-right: 30px;
+
+   }
+
+.container-topic-participants {
+padding-top: 15px;
+margin-left: 30px;
+}
+
+.container-submit-close {
+
+display: flex;
+padding-top: 100px;
+justify-content: space-between;
+}
+
+.close {
+
+    justify-self: right;
+    padding-right: 30px;
+}
+
+.submit {
+
+justify-self: left;
+padding-left: 30px;
+
+
+}

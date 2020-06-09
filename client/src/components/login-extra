@@ -1,0 +1,45 @@
+import React from 'react';
+import { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
+import GoogleLogin from 'react-google-login';
+import Button from '@material-ui/core/Button';
+
+
+/* global gapi */
+//LogIn using google Autho
+
+function Login() {
+
+      const [Authentified, setAuthentified] = useState(false);
+
+      const responseGoogle = response => {
+
+            alert("youpi, you are logged IN")
+
+      };
+
+      function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                  alert("sorry! you are out")
+            });
+      }
+
+      return (
+            <div className="Login-button">
+                  <Button >
+                        <GoogleLogin
+                              clientId="740831316427-m1qet5irfugkeva79brhb6s6nim8ds55.apps.googleusercontent.com"
+                              buttonText="Login"
+                              onSuccess={responseGoogle}
+                              onFailure={responseGoogle}
+                              cookiePolicy={'single_host_origin'}
+                        />
+                  </Button>
+                  <Button variant="contained" color="secondary" onClick={signOut}>Sign out </Button>
+            </div>
+      )
+}
+
+export default Login;
+
