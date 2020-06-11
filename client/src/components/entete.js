@@ -30,7 +30,7 @@ export default function Entete() {
               <div className="col-lg-12">
                 <nav className="navbar navbar-expand-lg">
                   <a className="navbar-brand" href="index.html">
-                    <img src={logo} alt="Logo" />
+                 {/* <img src={logo} alt="Logo" />*/}
                   </a>
                   <button
                     className="navbar-toggler"
