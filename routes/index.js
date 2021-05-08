@@ -9,10 +9,10 @@ let redisClient = redis.createClient()
 
 const Users = require('../models/Users');
 const { OAuth2Client } = require('google-auth-library');
-const client = new OAuth2Client("740831316427 - m1qet5irfugkeva79brhb6s6nim8ds55.apps.googleusercontent.com");
+const client = new OAuth2Client("xxxxxxxxxxxxxxxxxxxx");
 const querystring = require('querystring');
 router.use(express.json())
-router.use(express.urlencoded({ extended: false })) // CHECK WHAT DOES IT MEAN 
+router.use(express.urlencoded({ extended: false })) 
 
 
 
